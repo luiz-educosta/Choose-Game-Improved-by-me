@@ -12,7 +12,8 @@ int main() {
     int numerosecreto = 42;
     int chute;
     int tentativas = 1;
-
+    double pontos = 1000;
+    
     //loop de repetição até acertar
     while(1){
 
@@ -53,9 +54,16 @@ int main() {
         }
 
         tentativas ++;
+
+        //operação de saída dos pontos
+        double pontosperdidos = (chute - numerosecreto)/2.0;
+
+        pontos = pontos - pontosperdidos;
+        
     }
 
     printf("Fim de jogo!\n"); 
-    printf("Você acertou em %d tentativas!",tentativas);
+    printf("Você acertou em %d tentativas!\n",tentativas);
+    printf("Total de pontos: %.1f\n",pontos);
 
 }
