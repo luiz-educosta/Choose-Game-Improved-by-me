@@ -104,7 +104,6 @@ void header(int headerstatus){
             }  
 }
 
-
 void game(){
 
     
@@ -221,9 +220,6 @@ void game(){
 
 
 }
-
-
-
 
 void firstmenu(){
 
